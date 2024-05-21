@@ -62,10 +62,6 @@ public class Giay {
     private ThuongHieu thuongHieu;
 
     @ManyToOne
-    @JoinColumn(name = "ID_GIOI_TINH")
-    private GioiTinh gioiTinh;
-
-    @ManyToOne
     @JoinColumn(name = "ID_CHAT_LIEU")
     private ChatLieu chatLieu;
 
