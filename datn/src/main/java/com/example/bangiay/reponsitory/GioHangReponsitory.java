@@ -7,5 +7,5 @@ import org.springframework.stereotype.Controller;
 import java.util.UUID;
 
 @Controller
-public interface GioHangController extends JpaRepository<GioHang, UUID> {
+public interface GioHangReponsitory extends JpaRepository<GioHang, UUID> {
 }
