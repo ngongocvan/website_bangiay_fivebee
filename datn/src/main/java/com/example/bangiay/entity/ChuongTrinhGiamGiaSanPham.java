@@ -1,12 +1,6 @@
 package com.example.bangiay.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -51,11 +45,11 @@ public class ChuongTrinhGiamGiaSanPham {
     private int trangThai;
 
     @ManyToOne
-    @Column(name = "ID_NHAN_VIEN_CREATE")
+    @JoinColumn(name = "ID_NHAN_VIEN_CREATE")
     private NhanVien nhanVienCreate;
 
     @ManyToOne
-    @Column(name = "ID_NHAN_VIEN_UPDATE")
+    @JoinColumn(name = "ID_NHAN_VIEN_UPDATE")
     private NhanVien nhanVienUpdate;
 
 }
