@@ -1,6 +1,12 @@
 package com.example.bangiay.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -34,11 +40,11 @@ public class ChuongTrinhGiamGiaChiTietSanPham {
     private int trangThai;
 
     @ManyToOne
-    @JoinColumn(name = "ID_GIAY")
+    @Column(name = "ID_GIAY")
     private Giay giay;
 
     @ManyToOne
-    @JoinColumn(name = "ID_CHUONG_TRINH_GIAM_GIA_SAN_PHAM")
+    @Column(name = "ID_CHUONG_TRINH_GIAM_GIA_SAN_PHAM")
     private ChuongTrinhGiamGiaSanPham ctggsp;
 
 }
