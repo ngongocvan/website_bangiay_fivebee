@@ -7,8 +7,8 @@ import java.util.UUID;
 
 public interface HoaDonChiTietService {
     public List<HoaDonChiTiet> getall();
-    public HoaDonChiTiet add(HoaDonChiTiet hoaDonChiTiet);
+    HoaDonChiTiet add(HoaDonChiTiet hoaDonChiTiet);
     HoaDonChiTiet update(HoaDonChiTiet hoaDonChiTiet, UUID id);
-    HoaDonChiTiet deleteById(UUID id);
+    HoaDonChiTiet delete(UUID id);
     public HoaDonChiTiet details(UUID id);
 }

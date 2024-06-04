@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/fivebee/hoadonchitiet")
+@RequestMapping("/fivebee/Hoadonchitiet")
 public class HoaDonChiTietController {
     @Autowired
-    private HoaDonChiTietService service;
+    public HoaDonChiTietService service;
     @GetMapping
     public ResponseEntity<?> getall(){
         return ResponseEntity.ok(service.getall());

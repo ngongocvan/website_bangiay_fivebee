@@ -1,7 +1,7 @@
 package com.example.bangiay.service.implement;
 
 import com.example.bangiay.entity.HoaDonChiTiet;
-import com.example.bangiay.repository.HoaDonChiTiepRepository;
+import com.example.bangiay.repository.HoaDonChiTietRepository;
 import com.example.bangiay.service.HoaDonChiTietService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +12,10 @@ import java.util.UUID;
 @Service
 public class HoaDonChiTietServiceImpl implements HoaDonChiTietService {
     @Autowired
-    private HoaDonChiTiepRepository hoaDonChiTiepRepository;
+    private HoaDonChiTietRepository repository;
     @Override
     public List<HoaDonChiTiet> getall() {
-        return hoaDonChiTiepRepository.findAll();
+        return repository.findAll();
     }
 
     @Override
@@ -29,7 +29,7 @@ public class HoaDonChiTietServiceImpl implements HoaDonChiTietService {
     }
 
     @Override
-    public HoaDonChiTiet deleteById(UUID id) {
+    public HoaDonChiTiet delete(UUID id) {
         return null;
     }
 
