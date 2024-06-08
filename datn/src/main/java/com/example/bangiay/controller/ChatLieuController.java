@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fivebee/chatlieu")
+@RequestMapping("/api/chatlieu")
 public class ChatLieuController {
     @Autowired
     private ChatLieuService service;

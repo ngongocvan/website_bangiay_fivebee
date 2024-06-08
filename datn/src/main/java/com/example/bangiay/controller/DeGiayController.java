@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fivebee/degiay")
+@RequestMapping("/api/degiay")
 public class DeGiayController {
     @Autowired
     private DeGiayService service;

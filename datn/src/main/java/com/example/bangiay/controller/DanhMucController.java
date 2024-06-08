@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fivebee/danhmuc")
+@RequestMapping("/api/danhmuc")
 public class DanhMucController {
     @Autowired
     private DanhMucService service;

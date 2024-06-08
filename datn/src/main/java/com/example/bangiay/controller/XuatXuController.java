@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fivebee/xuatxu")
+@RequestMapping("/api/xuatxu")
 public class XuatXuController {
     @Autowired
     private XuatXuService service;

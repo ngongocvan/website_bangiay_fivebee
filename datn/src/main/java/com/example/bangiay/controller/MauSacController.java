@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fivebee/mausac")
+@RequestMapping("/api/mausac")
 public class MauSacController {
     @Autowired
     private MauSacService service;
