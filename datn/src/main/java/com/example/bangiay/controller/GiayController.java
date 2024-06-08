@@ -39,4 +39,8 @@ public class GiayController {
     public ResponseEntity update(@PathVariable UUID id){
         return ResponseEntity.ok(service.deleteById(id));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
